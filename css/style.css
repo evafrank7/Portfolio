@@ -1,0 +1,115 @@
+/** Main Page CSS i.e. index.html **/
+
+/** Header **/
+.title {
+    font-size: 27px;
+    color: beige;
+}
+
+header {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Spaces elements apart */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px 20px; /* Adds some spacing */
+}
+
+/** Navbar **/ 
+.navbar-elements {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Puts list items in a row */
+    gap: 20px; /* Adds spacing between items */
+}
+
+nav a {
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+}
+
+/** Hero Content (Background image) **/
+.section-header{
+    background-color: black; /** Change to url!!!! **/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.hero-content{
+    margin-top: 30px; /* Space below Navbar */
+    justify-content: center; /** center content vertically **/
+    align-items: center; /** center content horizontally **/
+}
+
+.hero-content h2{
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+
+}
+
+.hero-content button {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+/** End Header **/
+
+/** Gallery **/
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 80%; /* Adjust based on your preference */
+    margin: 0 auto;
+    overflow: hidden; /* Hides images that are not in view */
+}
+
+/* Slide Container */
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Individual images inside the carousel */
+.carousel-slide img {
+    width: 100%; /* Each image takes full width of the container */
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Navigation Arrows */
+button .prev .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the previous and next buttons */
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
