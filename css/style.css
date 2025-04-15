@@ -3,7 +3,7 @@
 /** Header **/
 .title {
     font-size: 27px;
-    color: beige;
+    color: white;
 }
 
 header {
@@ -20,17 +20,14 @@ header {
     margin: 0;
     display: flex; /* Puts list items in a row */
     gap: 20px; /* Adds spacing between items */
-}
-
-nav a {
     text-decoration: none;
-    color: beige;
-    font-size: 20px;
+    color: white;
+    font-size: 18px;
 }
 
 /** Hero Content (Background image) **/
 .section-header{
-    background-color: black; /** Change to url!!!! **/
+    background-image: url(/images/blue\ text.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,51 +62,22 @@ nav a {
 }
 /** End Header **/
 
-/** Gallery **/
-/* Carousel Container */
-.carousel {
-    position: relative;
-    width: 80%; /* Adjust based on your preference */
-    margin: 0 auto;
-    overflow: hidden; /* Hides images that are not in view */
-}
-
-/* Slide Container */
-.carousel-container {
+/** Section Message and About Me Teaser **/
+.section-message{
+    height: 100%;
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    flex-direction: column;
+    text-align: center;
 }
 
-/* Individual images inside the carousel */
-.carousel-slide img {
-    width: 100%; /* Each image takes full width of the container */
-    height: auto;
-    border-radius: 10px; /* Optional: adds rounded corners */
+.about-me-teaser{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-/* Navigation Arrows */
-button .prev .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
+/** Highlights and Updates **/
+.highlight {
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Position the previous and next buttons */
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
