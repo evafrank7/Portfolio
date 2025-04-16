@@ -1,4 +1,4 @@
-/** Main Page CSS i.e. index.html **/
+/**** Main Page CSS i.e. index.html ****/
 
 /** Header **/
 .title {
@@ -14,15 +14,18 @@ header {
 }
 
 /** Navbar **/ 
-.navbar-elements {
+.nav-elements {
     list-style: none; /* Removes bullet points */
     padding: 0;
     margin: 0;
     display: flex; /* Puts list items in a row */
     gap: 20px; /* Adds spacing between items */
+    font-size: 18px;
+}
+
+.nav-elements a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
 }
 
 /** Hero Content (Background image) **/
@@ -78,6 +81,57 @@ header {
 }
 
 /** Highlights and Updates **/
-.highlight {
+.highlights {
+    padding: 2rem;
+}
 
+.into-hightlighs{
+    margin-bottom: 2rem;
+}
+
+.updates{
+    display: flex;
+    justify-content: space-between;
+}
+
+.update1 img,
+.update2 img,
+.update3 img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/** Footer **/
+footer {
+    padding: 1rem;
+    background-color: #f4f4f4; /* optional */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* spacing between h5 and img */
+}
+
+.footer h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+  
+.footer img {
+    width: 24px;
+    height: 24px;
+}
+  
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
 }
