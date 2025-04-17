@@ -1,97 +1,122 @@
-/**** Main Page CSS i.e. index.html ****/
-
-/** Header **/
-.title {
-    font-size: 27px;
-    color: white;
+/**** CSS Reset ****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+/**** Header Section ****/
 header {
-    display: flex; /* Enables flexbox */
-    justify-content: space-between; /* Spaces elements apart */
-    align-items: center; /* Aligns items vertically */
-    padding: 10px 20px; /* Adds some spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-/** Navbar **/ 
+.title {
+  font-size: 27px;
+  color: white;
+}
+
+/**** Navigation Bar ****/
 .nav-elements {
-    list-style: none; /* Removes bullet points */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Puts list items in a row */
-    gap: 20px; /* Adds spacing between items */
-    font-size: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
 }
 
-.nav-elements a{
-    text-decoration: none;
-    color: white;
+.nav-elements a {
+  text-decoration: none;
+  color: white;
 }
 
-/** Hero Content (Background image) **/
-.section-header{
-    background-image: url(/images/blue\ text.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    color: white;
+/**** Hero Section ****/
+.section-header {
+  background-image: url(/images/blue\ text.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  color: white;
 }
 
-.hero-content{
-    margin-top: 30px; /* Space below Navbar */
-    justify-content: center; /** center content vertically **/
-    align-items: center; /** center content horizontally **/
+.hero-content {
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-content h2{
-    font-size: 37px;
-    margin-bottom: 20px;
+.hero-content h2 {
+  font-size: 37px;
+  margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 18px;
-    margin-bottom: 25px;
-
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
 .hero-content button {
-    font-size: 20px;
-    margin-bottom: 100px;
-}
-/** End Header **/
-
-/** Section Message and About Me Teaser **/
-.section-message{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  font-size: 20px;
+  margin-bottom: 100px;
 }
 
-.about-me-teaser{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+/**** Section: About Me & Message ****/
+.section-message {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-/** Highlights and Updates **/
+.about-me-teaser {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  height: 100%;
+  background-color: red;
+}
+
+.about-me-teaser h2 {
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+.about-me-teaser p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.about-me-button {
+  font-size: 13px;
+  margin-bottom: 100px;
+}
+
+/**** Highlights and Updates Section ****/
 .highlights {
-    padding: 2rem;
+  padding: 2rem;
 }
 
-.into-hightlighs{
-    margin-bottom: 2rem;
+.into-hightlighs {
+  margin-bottom: 2rem;
 }
 
-.updates{
-    display: flex;
-    justify-content: space-between;
+.updates {
+  display: flex;
+  justify-content: space-between;
 }
 
 .update1 img,
@@ -103,64 +128,66 @@ header {
   margin-bottom: 1rem;
 }
 
-/** Footer **/
+/**** Footer Section ****/
 footer {
-    padding: 1rem;
-    background-color: #f4f4f4; /* optional */
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 150px;
 }
-  
+
 .footer-left {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* spacing between h5 and img */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer h5 {
-    margin: 0;
-    font-size: 1rem;
+.footer h4 {
+  margin: 0;
+  font-size: 1rem;
 }
-  
+
 .footer img {
-    width: 24px;
-    height: 24px;
-}
-  
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #555;
-    text-align: right;
+  width: 24px;
+  height: 24px;
 }
 
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: right;
+}
+
+/**** Modal Window ****/
 .modal {
-    display: none; 
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.6);
-  }
-  
-  .modal-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 2rem;
-    border: 1px solid #888;
-    width: 60%;
-    border-radius: 10px;
-  }
-  
-  .close-button {
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.close-button {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
