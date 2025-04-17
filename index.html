@@ -38,7 +38,7 @@
     <section class="about-me-teaser">
         <div>
             <h2> Eva Frankovic </h2>
-            <p> Aspiring web developer </p>
+            <p> Aspiring web developer.</p>
             <button class="about-me-button"> About Me </button>
         </div>
     </section>
@@ -46,21 +46,22 @@
     <section class="highlights">
         <div class = "into-highlights">
             <h2> Highlights & Updates</h2>
+            <!-- Here we apply the modal javascript, select on photos to read more-->
             <div class="updates">
                 <div class="update1">
-                    <img src="https://via.placeholder.com/24" alt="Code Academy">
+                    <img src="https://via.placeholder.com/24" class="modal-trigger" alt="Code Academy">
                     <h4> Code Academy: Front-End Developer Career Path</h4>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis eius alias animi aperiam, deleniti pariatur repudiandae ad accusamus dolore corrupti doloribus esse quo nemo quos voluptatum dolores exercitationem molestias.</p>
                 </div>
     
                <div class="update2">
-                <img src="https://via.placeholder.com/24" alt="Kenvue">
+                <img src="https://via.placeholder.com/24" class="modal-trigger" alt="Kenvue">
                 <h4> Kenvue </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto commodi molestiae eaque, a voluptas nam quos cum et atque praesentium ipsa rerum dignissimos minus id nostrum, veniam delectus accusamus!</p>
                </div>
-    
+            
                <div class="update3">
-                <img src="https://via.placeholder.com/24" alt="Graduation">
+                <img src="https://via.placeholder.com/24" class="modal-trigger" alt="Graduation">
                 <h4> Graduation </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae modi repellendus reprehenderit atque quia et dolorem aliquid, provident voluptates nisi itaque dolores excepturi error distinctio repellat? Quasi, consequuntur nobis.</p>
                </div>
@@ -70,14 +71,14 @@
     <div id="modal" class="modal">
         <div class="modal-content">
           <span class="close-button">&times;</span>
-          <h3 id="modal-title">Title Here</h3>
-          <p id="modal-description">More details will go here...</p>
+          <h2 id="modal-title"></h2> <!-- Added ID for modal title -->
+          <p id="modal-description"></p> <!-- Added ID for modal description -->
         </div>
       </div>
 
     <footer>
         <div class="footer-left">
-            <h5>Eva Frankovic</h5>
+            <h4>Eva Frankovic</h4>
             <img src="image" alt="Instagram">
             <img src="image" alt="LinkedIn">
         </div>
