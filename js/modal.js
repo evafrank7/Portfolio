@@ -18,7 +18,7 @@ const updates = [
   }
 ];
 
-document.querySelectorAll(".updates img").forEach((img, index) => {
+document.querySelectorAll(".modal-trigger").forEach((img, index) => {
   img.addEventListener("click", () => {
     modalTitle.textContent = updates[index].title;
     modalDesc.textContent = updates[index].desc;

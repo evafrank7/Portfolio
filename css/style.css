@@ -17,9 +17,10 @@ header {
   padding: 10px 20px;
 }
 
-.title {
+.title a {
   font-size: 27px;
   color: white;
+  text-decoration: none;
 }
 
 /**** Navigation Bar ****/
@@ -43,7 +44,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -59,6 +60,7 @@ header {
 
 .hero-content h2 {
   font-size: 37px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -74,30 +76,41 @@ header {
 
 /**** Section: About Me & Message ****/
 .section-message {
-  height: 100%;
+  height: 250px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: yellow;
+}
+
+.section-message h2 {
+  font-size: 22px;
+}
+
+.section-message p {
+  font-size: 16px;
+  padding: 10px;
 }
 
 .about-me-teaser {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: flex-end;
-  height: 100%;
+  height: 300px;
   background-color: red;
 }
 
 .about-me-teaser h2 {
   font-size: 25px;
-  margin-top: 100px;
 }
 
 .about-me-teaser p {
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .about-me-button {
@@ -107,16 +120,34 @@ header {
 
 /**** Highlights and Updates Section ****/
 .highlights {
-  padding: 2rem;
+  padding: 32px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.into-hightlighs {
-  margin-bottom: 2rem;
+.into-hightlighs h2{
+    margin-bottom: 40px;
 }
+
 
 .updates {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.update1,
+.update2,
+.update3 {
+  flex: 1;
+  max-width: 33%;
+  padding: 10px;
 }
 
 .update1 img,
@@ -125,7 +156,8 @@ header {
   width: 100%;
   max-width: 200px;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 /**** Footer Section ****/
@@ -191,3 +223,67 @@ footer p {
   font-weight: bold;
   cursor: pointer;
 }
+
+/** PROJECTS PAGE **/
+/**** Hero Section ****/
+.section-header {
+  background-image: url(/images/blue\ text.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+.hero-content-projects {
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-projects h2 {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.hero-content-projects p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-visual {
+  flex: 1;
+}
+
+.project-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
