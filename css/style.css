@@ -7,6 +7,12 @@
 
 html, body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > main {
+  flex: 1;
 }
 
 /**** Header Section ****/
@@ -76,7 +82,7 @@ header {
 
 /**** Section: About Me & Message ****/
 .section-message {
-  height: 250px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,7 +127,7 @@ header {
 /**** Highlights and Updates Section ****/
 .highlights {
   padding: 32px;
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -162,13 +168,17 @@ header {
 
 /**** Footer Section ****/
 footer {
-  padding: 1rem;
+  padding: 2rem;
+  min-height: 150px;
   background-color: #f4f4f4;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   height: 150px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .footer-left {
@@ -192,6 +202,8 @@ footer p {
   font-size: 0.9rem;
   color: #555;
   text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
 }
 
 /**** Modal Window ****/
@@ -226,7 +238,7 @@ footer p {
 
 /** PROJECTS PAGE **/
 /**** Hero Section ****/
-.section-header {
+.section-header.projects {
   background-image: url(/images/blue\ text.jpg);
   background-size: cover;
   background-position: center;
@@ -289,11 +301,11 @@ footer p {
 
 /** ABOUT PAGE **/
 .section-header-v2 {
-  background-color: whitesmoke;
+  background-color: white;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -302,9 +314,12 @@ footer p {
 }
 
 .title-v2 a {
-  font-size: 27px;
+  font-size: 18px;
   color: black;
   text-decoration: none;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /**** Navigation Bar ****/
@@ -320,4 +335,75 @@ footer p {
 .nav-elements-v2 a {
   text-decoration: none;
   color: black;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+/** CONTACT PAGE **/
+.page-title {
+  padding: 40px;
+  font-size: 36px;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-me-teaser{
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-me-message{
+  padding-bottom: 10px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.diff-font{
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.contact-me-submes{
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+}
+
+.contact-form{
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  padding: 10px;
+}
+
+.contact-form-section{
+  text-align: left;
+  min-width: fit-content;
+  padding: 10px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  box-sizing: border-box;
+  width: 500px;
+}
+
+.contact-submit{
+  box-sizing: border-box;
+  width: 500px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+}
+
+label{
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
 }
