@@ -1,9 +1,9 @@
-/** Main Page CSS i.e. index.html **/
+/**** Main Page CSS i.e. index.html ****/
 
 /** Header **/
 .title {
     font-size: 27px;
-    color: beige;
+    color: white;
 }
 
 header {
@@ -14,23 +14,23 @@ header {
 }
 
 /** Navbar **/ 
-.navbar-elements {
+.nav-elements {
     list-style: none; /* Removes bullet points */
     padding: 0;
     margin: 0;
     display: flex; /* Puts list items in a row */
     gap: 20px; /* Adds spacing between items */
+    font-size: 18px;
 }
 
-nav a {
+.nav-elements a{
     text-decoration: none;
-    color: beige;
-    font-size: 20px;
+    color: white;
 }
 
 /** Hero Content (Background image) **/
 .section-header{
-    background-color: black; /** Change to url!!!! **/
+    background-image: url(/images/blue\ text.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,51 +65,73 @@ nav a {
 }
 /** End Header **/
 
-/** Gallery **/
-/* Carousel Container */
-.carousel {
-    position: relative;
-    width: 80%; /* Adjust based on your preference */
-    margin: 0 auto;
-    overflow: hidden; /* Hides images that are not in view */
-}
-
-/* Slide Container */
-.carousel-container {
+/** Section Message and About Me Teaser **/
+.section-message{
+    height: 100%;
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    flex-direction: column;
+    text-align: center;
 }
 
-/* Individual images inside the carousel */
-.carousel-slide img {
-    width: 100%; /* Each image takes full width of the container */
-    height: auto;
-    border-radius: 10px; /* Optional: adds rounded corners */
+.about-me-teaser{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-/* Navigation Arrows */
-button .prev .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
+/** Highlights and Updates **/
+.highlights {
+    padding: 2rem;
 }
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.into-hightlighs{
+    margin-bottom: 2rem;
 }
 
-/* Position the previous and next buttons */
-.prev {
-    left: 10px;
+.updates{
+    display: flex;
+    justify-content: space-between;
 }
 
-.next {
-    right: 10px;
+.update1 img,
+.update2 img,
+.update3 img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/** Footer **/
+footer {
+    padding: 1rem;
+    background-color: #f4f4f4; /* optional */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* spacing between h5 and img */
+}
+
+.footer h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+  
+.footer img {
+    width: 24px;
+    height: 24px;
+}
+  
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
 }
